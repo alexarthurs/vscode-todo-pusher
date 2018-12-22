@@ -1,65 +1,76 @@
 {
-    "name": "todoer",
-    "displayName": "TODOer",
-    "description": "YUP YUP YUP",
+    "name": "todo-pusher",
+    "displayName": "TODO Pusher",
+    "description": "Push a TODO to Jira or Trello.",
     "version": "0.0.1",
-    "publisher": "AlexArthurs",
+    "publisher": "Alex Arthurs <info@alexarthurs.com>",
+    "author": {
+        "email": "info@alexarthurs.com",
+        "name": "Alex Arthurs",
+        "url": "http://alexarthurs.com"
+    },
+    "badges": [{"description": "yuo", "href": "http://google.ca","url": "yup"}],
     "engines": {
         "vscode": "^1.28.0"
     },
     "categories": [
         "Other"
     ],
+    "license": "./LICENSE",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alexarthurs/vscode-todo-pusher"
+    },
+    "icon": "images/icon.png",
     "activationEvents": [
-        "onCommand:extension.JiraSetup",
-        "onCommand:extension.CreateJiraToken",
-        "onCommand:extension.CreateJiraIssue",
-        "onCommand:extension.CreateTrelloCard",
-        "onCommand:extension.GetTrelloToken",
-        "onCommand:extension.EnterTrelloToken"
+        "onCommand:todo-pusher.jiraSetup",
+        "onCommand:todo-pusher.createJiraToken",
+        "onCommand:todo-pusher.createJiraIssue",
+        "onCommand:todo-pusher.createTrelloCard",
+        "onCommand:todo-pusher.getTrelloToken",
+        "onCommand:todo-pusher.setTrelloToken"
     ],
     "main": "./out/extension",
     "contributes": {
-        "commands": [
-            {
-                "command": "extension.JiraSetup",
-                "title": "TODOer: Jira Setup"
+        "commands": [{
+                "command": "todo-pusher.jiraSetup",
+                "title": "TODO Pusher: Jira Setup"
             },
             {
-                "command": "extension.CreateJiraToken",
-                "title": "TODOer: Create Jira Token"
+                "command": "todo-pusher.createJiraToken",
+                "title": "TODO Pusher: Create Jira Token"
             },
             {
-                "command": "extension.CreateJiraIssue",
-                "title": "TODOer: Create Jira Issue"
+                "command": "todo-pusher.createJiraIssue",
+                "title": "TODO Pusher: Create Jira Issue"
             },
             {
-                "command": "extension.CreateTrelloCard",
-                "title": "TODOer: Create Trello Card"
+                "command": "todo-pusher.createTrelloCard",
+                "title": "TODO Pusher: Create Trello Card"
             },
             {
-                "command": "extension.GetTrelloToken",
-                "title": "TODOer: Get Trello Token"
+                "command": "todo-pusher.getTrelloToken",
+                "title": "TODO Pusher: Get Trello Token"
             },
             {
-                "command": "extension.EnterTrelloToken",
-                "title": "TODOer: Enter Trello Token"
+                "command": "todo-pusher.setTrelloToken",
+                "title": "TODO Pusher: Set Trello Token"
             }
         ],
         "configuration": {
-            "title": "TODOer Configuration",
+            "title": "TODO Pusher Configuration",
             "properties": {
-                "TODOer.trelloToken": {
+                "todo-pusher.trelloToken": {
                     "type": "string",
                     "description": "Your Trello Token",
                     "default": ""
                 },
-                "TODOer.jiraHost": {
+                "todo-pusher.jiraHost": {
                     "type": "string",
                     "description": "Your Jira Host",
                     "default": ""
                 },
-                "TODOer.jiraClientToken": {
+                "todo-pusher.jiraClientToken": {
                     "type": "string",
                     "description": "Your Jira Client Token",
                     "default": ""

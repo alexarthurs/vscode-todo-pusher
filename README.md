@@ -1,65 +1,25 @@
-# TODOer README
+# TODO Pusher
 
-This is the README for your extension "TODOer". After writing up a brief description, we recommend including the following sections.
+An extension for VSCode that lets you easily push your TODOs to Jira or Trello.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+*Push a TODO to Jira:*
 
-For example if there is an image subfolder under your extension project workspace:
+![Push-TODO-to-Jira](images/jira.gif)
 
-\!\[feature X\]\(images/feature-x.png\)
+*Push a TODO to Trello:*
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+![Push-TODO-to-Trello](images/trello.gif)
 
-## Requirements
+## Jira Setup Guide
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (Mac), Enter `TODO Pusher: Create Jira Token`, and copy token.
+2. Enter Command `TODO Pusher: Jira Setup`, and follow wizard.
+3. Open up some code and enter Command `TODO Pusher: Create Jira Issue`
 
-## Extension Settings
+## Trello Setup Guide
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (Mac), Enter `TODO Pusher: Get Trello Token`, and copy token.
+2. Enter Command `TODO Pusher: Set Trello Token`, and paste token.
+3. Open up some code and enter Command `TODO Pusher: Create Trello Card`
