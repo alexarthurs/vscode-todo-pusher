@@ -3,13 +3,12 @@
     "displayName": "TODO Pusher",
     "description": "Push a TODO to Jira or Trello.",
     "version": "0.0.1",
-    "publisher": "Alex Arthurs <info@alexarthurs.com>",
+    "publisher": "alex-arthurs",
     "author": {
         "email": "info@alexarthurs.com",
         "name": "Alex Arthurs",
         "url": "http://alexarthurs.com"
     },
-    "badges": [{"description": "yuo", "href": "http://google.ca","url": "yup"}],
     "engines": {
         "vscode": "^1.28.0"
     },
@@ -32,7 +31,8 @@
     ],
     "main": "./out/extension",
     "contributes": {
-        "commands": [{
+        "commands": [
+            {
                 "command": "todo-pusher.jiraSetup",
                 "title": "TODO Pusher: Jira Setup"
             },
