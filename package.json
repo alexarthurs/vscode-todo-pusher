@@ -9,6 +9,15 @@
         "name": "Alex Arthurs",
         "url": "http://alexarthurs.com"
     },
+    "keywords": [
+        "todo",
+        "fixme",
+        "jira",
+        "trello",
+        "manage",
+        "push",
+        "annotation"
+    ],
     "engines": {
         "vscode": "^1.28.0"
     },
